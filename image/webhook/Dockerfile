@@ -8,8 +8,8 @@ LABEL author.name="Q.SaiBot" \
 
 WORKDIR /code
 
-COPY ./requirements.txt /code/requirements.txt
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+COPY /pip/requirements.txt /code/pip/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /code/pip/requirements.txt
 # TODO: Проверить, будет лт работать относительный путь.
 
 COPY ./app /code/app
