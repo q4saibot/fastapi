@@ -1,0 +1,6 @@
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost"]
+            start_period: 10s
+            interval: 1m
+            timeout: 10s
+            retries: 5
