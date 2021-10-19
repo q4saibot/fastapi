@@ -18,7 +18,7 @@ VOLUME ["/code"]
 EXPOSE 80
 
 HEALTHCHECK --start-period=30s \
-            --interval=10s \
+            --interval=1m \
             --timeout=20s \
             --retries=3 \
             CMD curl -f http://localhost || exit 1
